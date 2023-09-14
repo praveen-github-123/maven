@@ -9,6 +9,10 @@
     <name>my-web-app</name>
     <url>http://maven.apache.org</url>
     <dependencies>
+             <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version> <!-- or a suitable version -->
+    <scope>test</scope>
         <!-- Your dependencies here -->
     </dependencies>
     <build>
