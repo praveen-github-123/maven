@@ -4,26 +4,27 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>my-web-app</artifactId>
-    <packaging>war</packaging> <!-- Change packaging to 'war' for web applications -->
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>my-web-app</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-             <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version> <!-- or a suitable version -->
-    <scope>test</scope>
-        <!-- Your dependencies here -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Your other dependencies go here -->
     </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>your_jetty_version_here</version> <!-- Specify the Jetty version -->
+                <version>your_jetty_version_here</version>
                 <configuration>
                     <webApp>
-                        <!-- Configure the context path -->
                         <contextPath>/</contextPath>
                     </webApp>
                 </configuration>
